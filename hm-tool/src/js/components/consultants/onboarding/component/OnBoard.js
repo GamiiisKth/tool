@@ -1,6 +1,3 @@
-/**
- * Created by se90514 on 2017-06-20.
- */
 
 import React from 'react';
 import {render} from 'react-dom';
@@ -224,4 +221,3 @@ export class RfsRender extends React.Component {
 
 
 export let rfsRenderInstance = new RfsRender();
-

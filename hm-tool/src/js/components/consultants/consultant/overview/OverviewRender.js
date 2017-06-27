@@ -7,7 +7,7 @@ import 'react-select/dist/react-select.css';
 export default class OverviewRender extends React.Component {
 
     state = {
-        band: fromJS({
+            band: fromJS({
             bandOptions: [
                 {value: '6A', label: '6A'},
                 {value: '6B', label: '6B'},
