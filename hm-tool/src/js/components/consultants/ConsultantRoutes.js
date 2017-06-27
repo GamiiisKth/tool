@@ -10,7 +10,7 @@ import OnOffBoard from  './consultant/OnOffBoard';
 import PoDetails from  './consultant/PoDetails';
 import Travel from  './consultant/Travel';
 import Rr from  './consultant/Rr';
-import Rfs from  './consultant/Rfs';
+import {RfsRender} from  './../consultants/rfs/RfsRender';
 
 
 
@@ -33,7 +33,7 @@ export const onOffBoard = {
 export const rfs = {
 
     path: '/consultant/rfs',
-    component: Rfs,
+    component: RfsRender,
 };
 export const rr = {
 

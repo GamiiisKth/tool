@@ -2,36 +2,21 @@ import React from 'react';
 import Select from 'react-select';
 
 import 'react-select/dist/react-select.css';
-
+const a=[1,2,3,4,5];
 export default class OnOffBoard extends React.Component {
 
-    state = {
-        options: [
-            {value: 'Yes', label: 'Yes'},
-            {value: 'No', label: 'No'}
-        ],
-        value: null,
-    };
-
-
-    onChange(value) {
-        this.setState({value});
+    onChange(e){
+        console.log(e);
     }
-
-
     render() {
-        console.log(this.state);
         return (
-            <div class="col-sm-3">
-                <Select
-                    onChange={this.onChange.bind(this)}
-                    options={this.state.options}
-                    simpleValue
-                    value={this.state.value}
-                />
-            </div>
-        );
+            <Select
+                placeholder="hello"
+                onChange={this.onChange.bind(this)}
+                options={this.a}
+                simpleValue
+                value="1"
+            />
+        )
     }
-};
-
-module.exports = OnOffBoard;
+}

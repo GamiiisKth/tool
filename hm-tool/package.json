@@ -13,11 +13,13 @@
     "babel-preset-es2015": "^6.3.13",
     "babel-preset-react": "^6.3.13",
     "babel-preset-stage-0": "^6.3.13",
+    "bootstrap": "^3.3.7",
+    "bootstrap-select": "^1.12.2",
+    "enzyme": "^2.8.2",
     "form-schema-validation": "^1.6.0",
     "history": "^1.17.0",
     "immutable": "^3.8.1",
     "node-sass": "^4.5.3",
-    "react": "^0.14.9",
     "react-components-form": "^2.3.4",
     "react-dom": "^0.14.6",
     "react-router": "^1.0.3",
@@ -28,7 +30,7 @@
   },
   "devDependencies": {
     "css-loader": "^0.28.4",
-    "react": "0.12.x - 1.x",
+    "react": "^0.14.9",
     "react-tools": "^0.12.2",
     "sass-loader": "^6.0.5",
     "style-loader": "^0.8.3"
