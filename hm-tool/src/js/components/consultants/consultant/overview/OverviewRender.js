@@ -117,8 +117,7 @@ export default class OverviewRender extends React.Component {
                             <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
                             <input id="employeeNumber" type="text" class="form-control " name="employeeNumber"
                                    placeholder="Employee number"/>
-                        </div>
-                        &nbsp;
+                        </div>&nbsp;
 
                         <div class="input-group input-group-sm">
                             <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>

@@ -6,11 +6,12 @@ import {Route, browserHistory,} from 'react-router';
 
 
 import OverviewRender from  './consultant/overview/OverviewRender';
-import OnOffBoard from  './consultant/OnOffBoard';
+import {OnOffBoard} from  './onboarding/OnOffBoard';
 import PoDetails from  './consultant/PoDetails';
 import Travel from  './consultant/Travel';
-import Rr from  './consultant/Rr';
+import {ResourcesRequest} from  './resourcrs-request/ResourcesRequest';
 import {RfsRender} from  './../consultants/rfs/RfsRender';
+import {WorkPermit} from  './../consultants/workpermit/WorkPermit';
 
 
 
@@ -38,12 +39,14 @@ export const rfs = {
 export const rr = {
 
     path: '/consultant/rr',
-    component: Rr,
+    component: ResourcesRequest,
 };
 export const poDetails = {
-
     path: '/consultant/poDetails',
     component: PoDetails,
 };
+export const workPermit = {
 
-
+    path: '/consultant/workPermit',
+    component: WorkPermit,
+};

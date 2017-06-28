@@ -35,10 +35,6 @@ export class RfsRender extends React.Component {
         comments: fromJS({}),
     };
 
-    onChangeCategoryValue = (e) => {
-        this.setState({category:{value:e}});
-    };
-
     // When component has been rendered, "componentDidMount()"
     // is called. This is where we should perform asynchronous
     // behavior that will change the state of the component.
@@ -82,7 +78,7 @@ export class RfsRender extends React.Component {
     render() {
         return (
             <Rfs {...this.rfsId.toJS()} {...this.category.toJS()}
-                 {...this.rfsCreatedDate.toJS()}
+                 {...this.rfsCreatedDate.toJS() }{...this.category.toJS() }
 
             />
         )

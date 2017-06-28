@@ -21,7 +21,6 @@ export function mockRfs(fail) {
                             {value: 'earlyTermination', label: 'Early termination'},
                             {value: 'backFill', label: 'Back Fill'}],
                         value: null,
-                        onChangeCategory: onChangeData,
                     },
 
                     rfsCreatedDate: {value: '2017-06-01', disabled: false,},

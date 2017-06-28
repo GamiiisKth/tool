@@ -24,6 +24,7 @@ export default class ConsultantNav extends React.Component {
     const rfsClass = location.pathname.match(/^\/consultant^\/rfs/) ? "active" : "";
     const rrClass = location.pathname.match(/^\/consultant^\/rr/) ? "active" : "";
     const onOffBoardClass = location.pathname.match(/^\/consultant^\/onOffBoard/) ? "active" : "";
+    const workPermitClass = location.pathname.match(/^\/consultant^\/workPermit/) ? "active" : "";
     const navClass = collapsed ? "collapse" : "";
 
     return (
@@ -52,18 +53,20 @@ export default class ConsultantNav extends React.Component {
                 <Link to="/consultant/rfs" onClick={this.toggleCollapse.bind(this)}><span class="glyphicon glyphicon-link"></span> RFS</Link>
               </li>
               <li class={rrClass}>
-                <Link to="/consultant/rr" onClick={this.toggleCollapse.bind(this)}><span class="glyphicon glyphicon-globe"></span> RR</Link>
+                <Link to="/consultant/rr" onClick={this.toggleCollapse.bind(this)}><span class="glyphicon glyphicon-question-sign"></span> RR</Link>
               </li>
               <li class={onOffBoardClass}>
                 <Link to="/consultant/onOffBoard" onClick={this.toggleCollapse.bind(this)}><span class="glyphicon glyphicon-transfer"></span> On-Off-Board</Link>
               </li>
+              <li class={workPermitClass}>
+                <Link to="/consultant/workPermit" onClick={this.toggleCollapse.bind(this)}><span class="glyphicon glyphicon-globe"></span> Work Permit</Link>
+              </li>
             </ul>
+
             <ul class="nav navbar-nav navbar-right">
               <li><Link to="/"><span class="glyphicon glyphicon-home"></span> Home</Link></li>
             </ul>
           </div>
-
-
 
         </div>
       </nav>
