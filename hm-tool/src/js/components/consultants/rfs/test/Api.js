@@ -19,7 +19,7 @@ export function mockRfs(fail) {
                             {value: 'onSiteNew', label: 'OnSite New'},
                             {value: 'onSiteChange', label: 'onSite change'},
                             {value: 'earlyTermination', label: 'Early termination'},
-                            {value: 'backFill', label: 'Back Fill'}],
+                            {value: 'backFill', label:'Back Fill'}],
                         value: null,
                     },
 

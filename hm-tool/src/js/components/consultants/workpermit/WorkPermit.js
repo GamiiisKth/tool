@@ -7,7 +7,7 @@ import {render} from 'react-dom';
 import {fromJS} from 'immutable';
 import WorkPermitComponentsCollection from './WorkPermitComponentsCollection';
 
-//import {mockRfs} from './test/Api';
+//import {mockRr} from './test/Api';
 
 export class WorkPermit extends React.Component {
 
@@ -45,7 +45,7 @@ export class WorkPermit extends React.Component {
     // In this case, we're fetching a list of users from
     // the mock API.
     componentDidMount() {
-        this.job = mockRfs();
+        this.job = mockRr();
         this.job.then(
             (result) => {
                 // Populate the "users" state, but also

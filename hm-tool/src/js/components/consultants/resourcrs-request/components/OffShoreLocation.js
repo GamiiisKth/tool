@@ -3,17 +3,20 @@
  */
 
 import React from 'react';
+import Select from 'react-select';
+import 'react-select/dist/react-select.css';
 
 
-export default ({
-                    value,
-                    disabled,
-                    onChangeOffShoreLocation,
-                }) => (
-    <div class="input-group input-group-sm">
-        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-        <input id="OffShoreLocation" type="text" class="form-control" name="OffShoreLocation"
-               placeholder="OffShore Location" disabled={disabled} value={value} onChange={onChangeOffShoreLocation}/>
-    </div>
+
+
+export default ({placeholder,options,value,onChangeOffShoreLocation})=>(
+    <Select
+        placeholder={placeholder}
+        onChange={(e) => onChangeOffShoreLocation(e)}
+        options={options}
+        simpleValue
+        value={value}
+    />
 
 );
+

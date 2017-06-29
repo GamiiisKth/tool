@@ -18,7 +18,7 @@ import ResourceRequestId from "./components/ResourceRequestId";
 import RequestDate from "./components/RequestDate";
 import Ritm from "./components/Ritm";
 import Role from "./components/Role";
-import Title from "./components/Title";
+import ResourcesRequestTitle from "./components/ResourcesRequestTitle";
 import Type from "./components/Type";
 import PrimarySkills from "./components/PrimarySkills";
 
@@ -72,6 +72,9 @@ export default ({
         <div class="col-md-6">
             <div class="col-md-6">
 
+                <ResourcesRequestTitle {...title} />&nbsp;
+
+                {/*waiting for the content data */}
                 <Contract {...contract}/>&nbsp;
 
                 <ExpectedStartDate {...expectedStartDate}/>&nbsp;

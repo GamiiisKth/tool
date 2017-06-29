@@ -7,7 +7,7 @@ import {render} from 'react-dom';
 import {fromJS} from 'immutable';
 import ResourceRequestComponentsCollection from './ResourceRequestComponentsCollection';
 
-//import {mockRfs} from './test/Api';
+import {mockRr} from './test/Api';
 
 export class ResourcesRequest extends React.Component {
 
@@ -53,7 +53,7 @@ export class ResourcesRequest extends React.Component {
     // In this case, we're fetching a list of users from
     // the mock API.
     componentDidMount() {
-        this.job = mockRfs();
+        this.job = mockRr();
         this.job.then(
             (result) => {
                 // Populate the "users" state, but also
@@ -63,6 +63,7 @@ export class ResourcesRequest extends React.Component {
                     .set('resourcesRequestId', fromJS(result.resourcesRequestId))
                     .set('ritm', fromJS(result.ritm))
                     .set('title', fromJS(result.title))
+                    .set('type', fromJS(result.type))
                     .set('division', fromJS(result.division))
                     .set('role', fromJS(result.role))
                     .set('primarySkills', fromJS(result.primarySkills))
@@ -73,6 +74,7 @@ export class ResourcesRequest extends React.Component {
                     .set('expectedEndDate', fromJS(result.expectedEndDate))
                     .set('onSiteStartDate', fromJS(result.onSiteStartDate))
                     .set('onSiteEndDate', fromJS(result.onSiteEndDate))
+                    .set('requestDate', fromJS(result.requestDate))
                     .set('offShoreLocation', fromJS(result.offShoreLocation))
                     .set('onSiteLocation', fromJS(result.onSiteLocation))
             },
@@ -80,7 +82,6 @@ export class ResourcesRequest extends React.Component {
                 // When an error occurs, we want to clear
                 // the "loading" state and set the "error"
                 // state.
-
                 console.log('error');
             }
         );

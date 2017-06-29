@@ -52,12 +52,6 @@ export default ({
 
                 <RfsId {...rfsId}/>&nbsp;
 
-                <RfsCategory {...category} onChange={(e)=> console.log(e)}/>&nbsp;
-
-                <RfsAssignedTo {...assignedTo}/>&nbsp;
-
-                <RfsStatus {...rfsStatus} />&nbsp;
-
                 <PoStartDate {...poStartDate}/>
 
                 <PoEndDate {...poEndDate}/>&nbsp;
@@ -66,6 +60,11 @@ export default ({
 
                 <NewLevel {...newLevel} />&nbsp;
 
+                <RfsCategory {...category} onChange={(e)=> console.log(e)}/>&nbsp;
+
+                <RfsAssignedTo {...assignedTo}/>&nbsp;
+
+                <RfsStatus {...rfsStatus} />&nbsp;
 
             </div>
         </div>

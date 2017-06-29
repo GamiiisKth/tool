@@ -33,7 +33,7 @@ export default ({
 
                 {/* id*/}
 
-                <Category {...category}/>&nbsp;
+
 
                 <StartDate {...startDate} />&nbsp;
 
@@ -50,7 +50,7 @@ export default ({
         <div class="col-md-6">
             <div class="col-md-6">
 
-
+                <Category {...category}/>&nbsp;
 
                 <FiledDate {...filedDate}/>&nbsp;
 

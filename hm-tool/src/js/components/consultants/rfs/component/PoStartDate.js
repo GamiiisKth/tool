@@ -11,11 +11,9 @@ export default ({
                     onPoStartDateDateChange
 
                 }) => (
-
     <div>
         <label for="poStartDate">Po start date</label>
         <div class="input-group input-group-sm">
-
             <input id="poStartDate" type="date" class="form-control " name="poStartDate"
                    value={value} disabled={disabled} onChange={onPoStartDateDateChange}/>
             <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
