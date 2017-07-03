@@ -8,7 +8,6 @@ import {Route, browserHistory,} from 'react-router';
 import OverviewRender from  './consultant/overview/OverviewRender';
 import {OnOffBoard} from  './onboarding/OnOffBoard';
 import PoDetails from  './consultant/PoDetails';
-import Travel from  './consultant/Travel';
 import {ResourcesRequest} from  './resourcrs-request/ResourcesRequest';
 import {RfsRender} from  './../consultants/rfs/RfsRender';
 import {WorkPermit} from  './../consultants/workpermit/WorkPermit';
@@ -21,11 +20,6 @@ export const overview = {
     component: OverviewRender,
 };
 
-export const travel = {
-
-    path: '/consultant/travel',
-    component: Travel,
-};
 export const onOffBoard = {
 
     path: '/consultant/onOffBoard',

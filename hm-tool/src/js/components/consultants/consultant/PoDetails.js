@@ -1,13 +1,13 @@
 /**
- * Created by se90514 on 2017-06-13.
+ * Created by se90514 on 2017-06-29.
  */
-import React from "react";
+import React from 'react';
+import {render} from 'react-dom';
 
-export default  class PoDetails extends  React.Component{
-
-    render (){
+export default class PoDetails extends React.Component{
+    render(){
         return(
-            <p>PoDetajls</p>
+            <p>PoDetails</p>
         )
     }
 }

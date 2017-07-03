@@ -1,0 +1,46 @@
+.nav-tabs
+{
+    border-color:#1A3E5E;
+}
+
+.nav-tabs > li a {
+    border: 1px solid #1A3E5E;
+    background-color:#2F71AB;
+    color:#fff;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover{
+    background-color: white;
+    color:#000;
+    border: 1px solid #1A3E5E;
+    border-bottom-color: transparent;
+}
+
+.nav-tabs > li > a:hover{
+    background-color: #D6E6F3 !important;
+    border-radius: 5px;
+    color:#000;
+
+}
+
+
+#wrapper {
+    background-color: white;
+}
+
+#input {
+    resize: horizontal;
+    width: 200px;
+    border: none;
+    background-color: transparent;
+}
+
+#input:active {
+    width: auto;
+}
+
+#input:focus {
+    min-width: 200px;
+}

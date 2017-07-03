@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router";
 
 import Footer from "../components/layout/Footer";
-import Nav from "../components/layout/Nav";
+import PageNav from "../components/layout/PageNav";
 
 export default class Layout extends React.Component {
   render() {
@@ -12,12 +12,12 @@ export default class Layout extends React.Component {
       marginTop: "60px"
     };
     console.log("layout");
-    console.log(this.pro);
+    console.log(this.props);
     return (
       <div>
           {/*send the location to nav  to extract the path of every tabs when it has been clicked to resolve the path */}
           {/*render nav*/}
-        <Nav location={location} />
+        <PageNav location={location} />
 
         <div class="container" style={containerStyle}>
           <div class="row">

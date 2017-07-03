@@ -10,7 +10,7 @@ import Register from "./pages/Register";
 
 import ConsultantLayout from './components/consultants/ConsultantLayout';
 
-import {overview,travel,rr,rfs,poDetails,onOffBoard,workPermit} from './components/consultants/ConsultantRoutes';
+import {overview,rr,rfs,poDetails,onOffBoard,workPermit} from './components/consultants/ConsultantRoutes';
 
 const app = document.getElementById('app');
 
@@ -29,7 +29,6 @@ ReactDOM.render(
         {/*consultant tab with it's children tabs*/}
         <Route path="/consultant" components={ConsultantLayout}>
             <Route {...overview} />
-            <Route {...travel} />
             <Route {...rfs} />
             <Route {...rr} />
             <Route {...onOffBoard} />
